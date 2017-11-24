@@ -1,0 +1,13 @@
+1. Build on mac 10.13 is quite easy.
+
+For simple when testing send data, disable encryption:
+
+https://github.com/facebook/wdt/issues/174
+Receiver:
+wdt -directory ~/Downloads/Received --transfer_id=none --encryption_type=none -start_port 22356
+Sender:
+wdt -directory ~/Pictures -connection_url "get from console log when run receiver"
+
+2. Build on CentOS 7
++ Need cmake >= 3.2
++ Note to install boost-devel and openssl-devel, otherwise there's no header folder
